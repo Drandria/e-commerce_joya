@@ -1,0 +1,67 @@
+{
+    "accueil": [
+        {
+            "id": 1,
+            "image": "./articles/sandales-double-brides-beige-.jpg",
+            "nom": "sandales double brides beige",
+            "prix": 69.00,
+            "note":  5
+        },
+
+        {
+            "id": 2,
+            "image": "./articles/sandale-en-raphia-camel-.jpg",
+            "nom": "sandale en raphia camel",
+            "prix": 69.00,
+            "note":  5
+        },
+
+        {
+            "id": "3",
+            "image": "./articles/sandales-mi-mai-elvy-blanc.jpg",
+            "nom": "sandales mi mai elvy blanc",
+            "prix": 149.00,
+            "note":  5
+        },
+
+        {
+            "id": 4,
+            "image": "./articles/sandales-mi-mai-dina-dorees-.jpg",
+            "nom": "sandales mi mai dina dorées",
+            "prix": 159.00,
+            "note":  5
+        },
+
+        {
+            "id": 5,
+            "image": "./articles/sandales-mi-mai-capri-nude-.jpg",
+            "nom": "sandales mi mai capri nude",
+            "prix": 149.00,
+            "note":  5
+        },
+
+        {
+            "id": 6,
+            "image": "./articles/sandales-mi-mai-capri-noir-.jpg",
+            "nom": "sandales mi mai capri noir",
+            "prix": 149.00,
+            "note":  5
+        },
+
+        {
+            "id": 7,
+            "image": "./articles/sneakers-victoria-blanc-rose-et-jaune.jpg",
+            "nom": "sneakers victoria blanc,...",
+            "prix": 119.00,
+            "note":  5
+        },
+
+        {
+            "id": 8,
+            "image": "./articles/sneakers-victoria-couleurs-pastel.jpg",
+            "nom": "sneakers victoria couleurs...",
+            "prix": 119.00,
+            "note":  5
+        }
+    ]
+}
