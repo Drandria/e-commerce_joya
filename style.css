@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url(/fonts/amatic-sc/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans condensed';
+    src: url(/fonts/open-sans-condensed/OpenSans-CondLight.ttf);
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     --main-color: #d5959e;
-    --main-font: 'amatic SC';
-    border: 1px solid red;
+    --main-font: 'amatic SC', cursive;
+    --sec-font: 'Open Sans Condensed';
+    /* border: 1px solid red; */
 }
 
 html,
@@ -22,6 +33,33 @@ body,
     gap: 40px;
 }
 
+#panierFlottant {
+    width: 50px;
+    background-color: var(--main-color);
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#panierFlottant > img {
+    width: 20px;
+    height: 20px;
+}
+
+#panierFlottant > p {
+    width: 50%;
+    background-color: white;
+    font-family: var(--sec-font);
+
+    text-align: center;
+}
+
 header {
     width: 100%;
 
@@ -35,7 +73,7 @@ header {
     width: 100%;
     height: 45px;
     background-color: #f1f1f1;
-    font-family: "Open Sans", condensed;
+    font-family: var(--sec-font);
     font-size: 12px;
 
     display: flex;
@@ -86,26 +124,65 @@ header {
     padding: auto;
 }
 
+input {
+    padding: 0 10px;
+}
+
 .userInfo {
+    height: 100%;
+
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
 .userInfo > div {
-    font-family: "Open Sans", condensed;
+    height: 100%;
+    font-family: var(--sec-font);
     font-size: 12px;
+    position: relative;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.compte > p {
+    height: 100%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+#compteOption {
+    position: absolute;
+    top: 45px;
+    list-style: none;
+    width: max-content;
+
+    display: none;
+}
+
+.compte:hover #compteOption {
+    display: block;
+}
+
+#compteOption > li {
+    padding: 10px 20px;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+#compteOption > li:hover {
+    background-color: #ebebeb;
+}
+
 .panier {
     gap: 3px;
 }
 
-.nbr {
+#nbr {
     border: 2px solid black;
     padding: 2px 8px;
 }
@@ -130,27 +207,64 @@ nav {
     justify-content: center;
 }
 
-nav ul {
+#nav {
     width: 100%;
+    height: 100%;
     list-style: none;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* align-items: center; */
 }
 
-nav ul li {
+.navSection {
     color: white;
     font-size: 22px;
     font-weight: bold;
     font-family: var(--main-font);
     /* text-decoration: none; */
     cursor: pointer;
+    height: 100%;
+    position: relative;
+    
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
 }
 
-nav ul li:hover {
+.navSection:hover {
     color: #222222;
 }
+
+.sous-menu {
+    position: absolute;
+    top: 72px;
+    color: #222222;
+    background-color: white;
+    width: max-content;
+    list-style: none;
+    padding: 0 20px;
+
+    display: none;
+}
+
+.navSection:hover .sous-menu {
+    display: block;
+}
+
+.sous-menu > li {
+    padding: 10px 0;
+    font-family: var(--sec-font);
+    font-size: 12px;
+    font-weight: normal;   
+}
+
+.sous-menu > li:hover {
+    color: var(--main-color);
+}
+
+
 
 /* ======================================= Footer ============================================================ */
 
@@ -264,7 +378,7 @@ footer{
 }
 
 .inscription p {
-    font-family: "Open Sans", condensed;
+    font-family: var(--sec-font);
     font-size: 12px;
     color: #484848;
 }
@@ -339,7 +453,7 @@ main {
 .scarte > a {
     text-decoration: none;
     color: #999999;
-    font-family: "Open Sans", condensed;
+    font-family: var(--sec-font);
 }
 
 .note {
@@ -448,7 +562,7 @@ main {
 .parag .texte {
     width: 49%;
     padding: 80px;
-    font-family: "Open Sans", condensed;
+    font-family: var(--sec-font);
     background-color: #f7f7f7;
 
     display: flex;
@@ -491,6 +605,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: calc(15% / 2);
+    font-family: var(--sec-font);
 
     display: flex;
     align-items: center;
@@ -521,12 +636,214 @@ main {
     width: 100%;
     padding: 15px;
     background-color: #f7f7f7;
+    font-family: var(--sec-font);
 }
 
-/* #vente .scarte {
-    width: 274px;
+.gcarte {
+    width: 380px;
     
     display: flex;
     flex-direction: column;
     gap: 10px;
-} */
+}
+
+/* ===================================== Connection ============================================ */
+#connectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#identifiantH2 {
+    width: 100%;
+    text-align: start;
+    font-family: var(--main-font);
+}
+
+#formulaire {
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    border: 1px solid #ebebeb;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 255, 0.3);
+    font-family: var(--sec-font);
+}
+
+#idForm {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#idForm > div {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#emailInput {
+    height: 100%;
+
+    display: flex;
+}
+
+#idForm input {
+    height: 100%;
+    width: 300px;
+    border-radius: 5px;
+
+    background-color: #ebebeb;
+    border: none;
+}
+
+#emailInput button {
+    width: 60px;
+}
+
+#idForm  > button {
+    padding: 10px 20px;
+}
+
+#idForm button {
+    background-color: var(--main-color);
+    border: none;
+    font-family: var(--sec-font);
+}
+
+#idForm label {
+    font-family: var(--sec-font);
+    font-weight: bold;
+}
+
+/* =============================== selection element ====================================== */
+
+#infoElement {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#infoElement > img {
+    width: 540px;
+}
+
+#descri {
+    width: 540px;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#about {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#quantity {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#quantity > div {
+    font-family: var(--sec-font);
+    color: #999999;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+#quantity select {
+    width: 80px;
+    background: none;
+    border: 1px solid #999999;
+    padding: 0 10px;
+}
+
+#button {
+    color: black;
+    width: max-content;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ===============================  Panier ============================================== */
+
+#panierContainer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#panierContainer > div{
+    border: 1px solid #999999;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#listAchat {
+    width: 800px;
+    height: max-content;
+}
+
+#achat {
+    width: 300px;
+    height: 200px;
+    padding: 0 10px;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.prixPanier {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#liPanier {
+    list-style: none;
+}
+
+#liPanier > li{
+    padding: 10px 20px;
+}

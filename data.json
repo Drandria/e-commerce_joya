@@ -1,67 +1,208 @@
 {
-    "accueil": [
-        {
-            "id": 1,
-            "image": "./articles/sandales-double-brides-beige-.jpg",
-            "nom": "sandales double brides beige",
-            "prix": 69.00,
-            "note":  5
-        },
+    "accueil": {
+        "produits": [
+            {
+                "id": 1,
+                "image": "./articles/sandales-double-brides-beige-.jpg",
+                "nom": "sandales double brides beige",
+                "prix": 69.00,
+                "note":  5
+            },
+    
+            {
+                "id": 2,
+                "image": "./articles/sandale-en-raphia-camel-.jpg",
+                "nom": "sandale en raphia camel",
+                "prix": 69.00,
+                "note":  5
+            },
+    
+            {
+                "id": 3,
+                "image": "./articles/sandales-mi-mai-elvy-blanc.jpg",
+                "nom": "sandales mi mai elvy blanc",
+                "prix": 149.00,
+                "note":  5
+            },
+    
+            {
+                "id": 4,
+                "image": "./articles/sandales-mi-mai-dina-dorees-.jpg",
+                "nom": "sandales mi mai dina dorées",
+                "prix": 159.00,
+                "note":  5
+            },
+    
+            {
+                "id": 5,
+                "image": "./articles/sandales-mi-mai-capri-nude-.jpg",
+                "nom": "sandales mi mai capri nude",
+                "prix": 149.00,
+                "note":  5
+            },
+    
+            {
+                "id": 6,
+                "image": "./articles/sandales-mi-mai-capri-noir-.jpg",
+                "nom": "sandales mi mai capri noir",
+                "prix": 149.00,
+                "note":  5
+            },
+    
+            {
+                "id": 7,
+                "image": "./articles/sneakers-victoria-blanc-rose-et-jaune.jpg",
+                "nom": "sneakers victoria blanc,...",
+                "prix": 119.00,
+                "note":  5
+            },
+    
+            {
+                "id": 8,
+                "image": "./articles/sneakers-victoria-couleurs-pastel.jpg",
+                "nom": "sneakers victoria couleurs...",
+                "prix": 119.00,
+                "note":  5
+            }
+        ]
+    },
 
-        {
-            "id": 2,
-            "image": "./articles/sandale-en-raphia-camel-.jpg",
-            "nom": "sandale en raphia camel",
-            "prix": 69.00,
-            "note":  5
-        },
+    "pretAPorter": {
+        "path": [
+            "Tous les produits",
+            "Prêt À Porter"
+        ],
 
-        {
-            "id": "3",
-            "image": "./articles/sandales-mi-mai-elvy-blanc.jpg",
-            "nom": "sandales mi mai elvy blanc",
-            "prix": 149.00,
-            "note":  5
-        },
+        "produits": [
+            {
+                "id": 1,
+                "image": "./img/articles/pretAPorter/chemise-verte-leopard.jpg",
+                "nom": "Chemise verte leopard",
+                "prix": 29.00,
+                "note": 5
+            },
 
-        {
-            "id": 4,
-            "image": "./articles/sandales-mi-mai-dina-dorees-.jpg",
-            "nom": "sandales mi mai dina dorées",
-            "prix": 159.00,
-            "note":  5
-        },
+            {
+                "id": 2,
+                "image": "./img/articles/pretAPorter/jean-fam-coupe-mom.jpg",
+                "nom": "Jean fam coupe mom",
+                "prix": 79.90,
+                "note": 5
+            },
 
-        {
-            "id": 5,
-            "image": "./articles/sandales-mi-mai-capri-nude-.jpg",
-            "nom": "sandales mi mai capri nude",
-            "prix": 149.00,
-            "note":  5
-        },
+            {
+                "id": 3,
+                "image": "./img/articles/pretAPorter/pull-beige-love-.jpg",
+                "nom": "pull beige love",
+                "prix": 45.00,
+                "note": 5
+            },
 
-        {
-            "id": 6,
-            "image": "./articles/sandales-mi-mai-capri-noir-.jpg",
-            "nom": "sandales mi mai capri noir",
-            "prix": 149.00,
-            "note":  5
-        },
+            {
+                "id": 4,
+                "image": "./img/articles/pretAPorter/robe-leopard.jpg",
+                "nom": "Robe leopard",
+                "prix": 39.00,
+                "note": 5
+            },
 
-        {
-            "id": 7,
-            "image": "./articles/sneakers-victoria-blanc-rose-et-jaune.jpg",
-            "nom": "sneakers victoria blanc,...",
-            "prix": 119.00,
-            "note":  5
-        },
+            {
+                "id": 5,
+                "image": "./img/articles/pretAPorter/top-bleu-court-a-bretelles.jpg",
+                "nom": "Top bleu court à bretelles",
+                "prix": 55.00,
+                "note": 5
+            },
 
-        {
-            "id": 8,
-            "image": "./articles/sneakers-victoria-couleurs-pastel.jpg",
-            "nom": "sneakers victoria couleurs...",
-            "prix": 119.00,
-            "note":  5
-        }
-    ]
+            {
+                "id": 6,
+                "image": "img/articles/pretAPorter/top-vert-col-cheminee-.jpg",
+                "nom": "Top vert col cheminée",
+                "prix": 29.00,
+                "note": 5
+            },
+
+            {
+                "id": 7,
+                "image": "img/articles/pretAPorter/trench-beige-court.jpg",
+                "nom": "Trench beige court",
+                "prix": 69.90,
+                "note": 5
+            }
+        ]
+    },
+
+    "chaussures": {
+        "path": [
+            "Tous les produits",
+            "Chaussures"
+        ],
+
+        "produits": [
+            {
+                "id": 1,
+                "image": "img/articles/chaussures/baskets-cl11-glitter-or-arriere-terra-cotta-.jpg",
+                "nom": "Baskets CL11 glitter or..",
+                "prix": 69.90,
+                "note": 5
+            },
+
+            {
+                "id": 2,
+                "image": "img/articles/chaussures/baskets-cl11-montantes-blanches-motif-leopard.jpg",
+                "nom": "Baskets CL11 montantes...",
+                "prix": 69.90,
+                "note": 5
+            },
+
+            {
+                "id": 3,
+                "image": "img/articles/chaussures/mocassins-mi-mai-noirs-brillants.jpg",
+                "nom": "Mocassins mi mai noirs...",
+                "prix": 110.00,
+                "note": 5
+            },
+
+            {
+                "id": 4,
+                "image": "img/articles/chaussures/semerdjian-sandales-en-cuir-dorees.jpg",
+                "nom": "Semerdjian sandales en...",
+                "prix": 90.30,
+                "note": 5
+            }
+        ]
+    },
+
+    "accessoires": {
+        "path": [
+            "Tous les produits",
+            "Accessoires"
+        ],
+
+        "produits": [
+            
+        ]
+    },
+
+    "sacs": {
+        "path": [
+            "Tous les produits",
+            "Sacs & Petite Maroquinerie"
+        ],
+
+        "produits": [
+            
+        ]
+    },
+
+    "bijoux": {
+        "path": [
+            "Tous les produits",
+            "Bijoux"
+        ],
+
+        "produits": [
+            
+        ]
+    }
 }
